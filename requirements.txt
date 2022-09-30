@@ -8,4 +8,5 @@ regex
 python-multipart
 gunicorn
 python-crfsuite
+underthesea_core
 nltk
