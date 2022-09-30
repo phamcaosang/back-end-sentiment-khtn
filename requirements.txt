@@ -3,7 +3,7 @@ uvicorn
 pydantic
 pandas
 pickle5
-tensorflow
+tensorflow-cpu
 regex
 underthesea
 python-multipart
