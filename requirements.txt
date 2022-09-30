@@ -7,3 +7,4 @@ tensorflow-cpu
 regex
 python-multipart
 gunicorn
+nltk
