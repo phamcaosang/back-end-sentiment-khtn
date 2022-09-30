@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+pandas
+pickle5
+tensorflow
+regex
+underthesea
+python-multipart
+gunicorn
