@@ -5,6 +5,5 @@ pandas
 pickle5
 tensorflow-cpu
 regex
-underthesea
 python-multipart
 gunicorn
