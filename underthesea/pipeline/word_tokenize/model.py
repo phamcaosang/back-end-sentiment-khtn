@@ -1,6 +1,6 @@
 from underthesea.transformer.tagged import TaggedTransformer
 from os.path import join, dirname
-from underthesea.pipeline.word_tokenize import pycrfsuite
+import pycrfsuite
 from underthesea_core import CRFFeaturizer
 
 from underthesea.transformer.tagged_feature import lower_words
