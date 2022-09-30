@@ -8,6 +8,8 @@ from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
 from preprocess import handle_preprocess_dataframe, handle_preprocess_single_text
 
+print("test")
+
 with open('models/tokenizer_full_data.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
@@ -65,9 +67,8 @@ def read_root():
     return {"Hello": "World"}
 
 @app.post("/single")
-def handleSingle(item: Item):
-    result = handSingleText(item.textRequest)
-    return result
+async def handleSingle(item: Item):
+    return handSingleText(item.textRequest)
 
 @app.post("/file")
 async def handleSingle(file: UploadFile  = File(...)):
@@ -76,5 +77,4 @@ async def handleSingle(file: UploadFile  = File(...)):
         content = await file.read()
         myFile.write(content)
         myFile.close()
-    result = handleSingleClassify(destination)
-    return result
+    return  handleSingleClassify(destination)
