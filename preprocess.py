@@ -1,5 +1,5 @@
 import regex
-from Underthesea.underthesea import word_tokenize, pos_tag, sent_tokenize
+from underthesea import word_tokenize, pos_tag, sent_tokenize
 
 file = open('utils/emojicon.txt', 'r', encoding="utf8")
 emoji_lst = file.read().split('\n')
