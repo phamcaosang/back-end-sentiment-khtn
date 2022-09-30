@@ -30,12 +30,11 @@ except IOError as ex:
 ###########################################################
 # TOP-LEVEL MODULES
 ###########################################################
-from underthesea.pipeline.sent_tokenize import sent_tokenize
-from underthesea.pipeline.word_tokenize import word_tokenize
-from underthesea.pipeline.pos_tag import pos_tag
-from underthesea.pipeline.chunking import chunk
-from underthesea.pipeline.ner import ner
-
+from undertheseaLocal.underthesea.pipeline.sent_tokenize import sent_tokenize
+from undertheseaLocal.underthesea.pipeline.word_tokenize import word_tokenize
+from undertheseaLocal.underthesea.pipeline.pos_tag import pos_tag
+from undertheseaLocal.underthesea.pipeline.chunking import chunk
+from undertheseaLocal.underthesea.pipeline.ner import ner
 try:
     from underthesea.pipeline.classification import classify
 except Exception:
