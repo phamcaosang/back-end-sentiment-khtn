@@ -4,5 +4,6 @@ pydantic
 pandas
 pickle5
 tensorflow-cpu
+regex
 python-multipart
 gunicorn
