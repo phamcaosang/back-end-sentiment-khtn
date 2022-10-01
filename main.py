@@ -32,7 +32,7 @@ def handleSingleClassify(path):
     result_model = model.predict(x_tokenized)
     result = []
     for index, item in enumerate(result_model):
-        if (item[0] > 0.5):
+        if (item[0] > 0.45):
             result.append([data["text"][index], 1])
         else:
             result.append([data["text"][index], 0])
